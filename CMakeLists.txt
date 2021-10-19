@@ -4,3 +4,4 @@ project(EighthModule)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(BulkGoods BulkGoods.cpp)
+add_executable(ProteinCalculator ProteinCalculator.cpp)
