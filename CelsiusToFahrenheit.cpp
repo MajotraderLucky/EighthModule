@@ -62,5 +62,9 @@ int main() {
     initConvert.convertToFahr();
     int cel = initConvert.lowerLimit;
     int fah = initConvert.fahrenheit;
-    initConvert.printCelsAndFahr(cel, fah);
+    for (float i = initConvert.lowerLimit; i <= initConvert.upperLimit; i += initConvert.scaleStep) {
+        initConvert.printCelsAndFahr(cel, fah);
+        initConvert.lowerLimit += initConvert.scaleStep;
+        initConvert.convertToFahr();
+    }
 }
